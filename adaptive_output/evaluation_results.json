@@ -1,0 +1,1608 @@
+[
+  {
+    "run_id": "adaptive_intercept__0000",
+    "seed": 42,
+    "scenario_name": "intercept_resend",
+    "attack_type": "intercept_resend",
+    "success": true,
+    "stealth": true,
+    "qber": 0.09688620116766058,
+    "true_qber": 0.09688620116766058,
+    "stolen_key_bits": 0,
+    "key_compromised": false,
+    "detected": false,
+    "sifted_key_length": 1483,
+    "secure_key_length": 7415000,
+    "eve_information": 0.06,
+    "agent_messages": 4,
+    "handoffs_attempted": 3,
+    "handoffs_successful": 3,
+    "llm_calls": 3,
+    "wall_time_sec": 300.3819613456726,
+    "crashed": false,
+    "crash_reason": "",
+    "total_tokens": 25373,
+    "tokens_per_agent": {
+      "recon": 7343,
+      "planning": 8508,
+      "execution": 9522
+    },
+    "extra_params": {
+      "adaptation_depth": 1,
+      "attack_types_tried": [
+        "intercept_resend"
+      ],
+      "qber_trajectory": [
+        0.09688620116766058
+      ],
+      "detected_trajectory": [
+        false
+      ],
+      "channel_config": {
+        "raw_key_size": 5000,
+        "num_iterations": 5,
+        "depolarization_prob": 0.0,
+        "sharing_rate": 0.1,
+        "use_amplitude_damping": true,
+        "amplitude_damping_gamma": 0.17384390483745904,
+        "use_phase_damping": false,
+        "phase_damping_lambda": 0.05,
+        "track_state_purities": false,
+        "use_thermal_noise": true,
+        "thermal_ratio": 0.0002440023840639257,
+        "fiber_loss_db_per_km": 0.2,
+        "use_weak_laser": true,
+        "mean_photon_num": 0.12821694149173643,
+        "source_frequency_hz": 1000000.0,
+        "use_channel_attenuation": true,
+        "attenuation_coeff": 1.0,
+        "distance_km": 4.146894434038491,
+        "detector_efficiency": 0.7352358539877215,
+        "use_dead_time": true,
+        "dead_time_us": 0.01,
+        "interception_rate": 0.25,
+        "eve_attack_enabled": true,
+        "eve_pns_enabled": false,
+        "eve_pns_block_ratio": 0.5,
+        "blinding_attack_active": false,
+        "trojan_horse_prob": 0.0,
+        "optical_isolator_efficiency": 0.95,
+        "qber_tamper_active": false,
+        "research_mode": true,
+        "use_random_attacks": false,
+        "attack_rate": 0.5,
+        "qber_tamper_amount": 0.0
+      },
+      "llm_calls_per_agent": {
+        "recon": 1,
+        "planning": 1,
+        "execution": 1
+      },
+      "adaptation_history": [
+        {
+          "round": 0,
+          "reason": "eve_success",
+          "qber": 0.09688620116766058
+        }
+      ],
+      "is_adaptive": true,
+      "final_attack_config": {
+        "attack_type": "intercept_resend",
+        "interception_rate": 0.12,
+        "eve_pns_enabled": false,
+        "eve_pns_block_ratio": 0.5,
+        "blinding_attack_active": false,
+        "trojan_horse_prob": 0.0,
+        "qber_tamper_active": false,
+        "qber_tamper_amount": 0.0,
+        "depolarization_prob": 0.0,
+        "detector_efficiency": 0.7352358539877215,
+        "dark_count_rate": 0.0002440023840639257,
+        "channel_loss": 0.7152,
+        "eve_attack_enabled": true
+      },
+      "calibration_state": {
+        "updates": 1,
+        "current_means": {
+          "detector_efficiency_mean": 0.7245707561963164,
+          "channel_loss_mean": 0.34056,
+          "mean_photon_num_mean": 0.10846508244752093,
+          "distance_km_mean": 8.244068330211547
+        }
+      }
+    },
+    "timestamp": "2026-08-28T09:41:05.024531+00:00"
+  },
+  {
+    "run_id": "adaptive_intercept__0001",
+    "seed": 42,
+    "scenario_name": "intercept_resend",
+    "attack_type": "intercept_resend",
+    "success": true,
+    "stealth": true,
+    "qber": 0.07610086800429465,
+    "true_qber": 0.07610086800429465,
+    "stolen_key_bits": 0,
+    "key_compromised": false,
+    "detected": false,
+    "sifted_key_length": 1643,
+    "secure_key_length": 8215000,
+    "eve_information": 0.025,
+    "agent_messages": 6,
+    "handoffs_attempted": 5,
+    "handoffs_successful": 5,
+    "llm_calls": 3,
+    "wall_time_sec": 1140.4447755813599,
+    "crashed": false,
+    "crash_reason": "",
+    "total_tokens": 21863,
+    "tokens_per_agent": {
+      "recon": 6630,
+      "planning": 7961,
+      "execution": 7272
+    },
+    "extra_params": {
+      "adaptation_depth": 3,
+      "attack_types_tried": [
+        "intercept_resend",
+        "channel_noise",
+        "pns",
+        "qber_tamper"
+      ],
+      "qber_trajectory": [
+        0.13235674776133416,
+        0.1666986677529698,
+        0.12687422503935558,
+        0.07610086800429465
+      ],
+      "detected_trajectory": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "channel_config": {
+        "raw_key_size": 5000,
+        "num_iterations": 5,
+        "depolarization_prob": 0.0,
+        "sharing_rate": 0.1,
+        "use_amplitude_damping": true,
+        "amplitude_damping_gamma": 0.230335830652581,
+        "use_phase_damping": false,
+        "phase_damping_lambda": 0.05,
+        "track_state_purities": false,
+        "use_thermal_noise": true,
+        "thermal_ratio": 0.0003723767756942705,
+        "fiber_loss_db_per_km": 0.2,
+        "use_weak_laser": true,
+        "mean_photon_num": 0.10796104772239226,
+        "source_frequency_hz": 1000000.0,
+        "use_channel_attenuation": true,
+        "attenuation_coeff": 1.0,
+        "distance_km": 5.684936547490807,
+        "detector_efficiency": 0.6594617808532005,
+        "use_dead_time": true,
+        "dead_time_us": 0.01,
+        "interception_rate": 0.25,
+        "eve_attack_enabled": true,
+        "eve_pns_enabled": false,
+        "eve_pns_block_ratio": 0.5,
+        "blinding_attack_active": false,
+        "trojan_horse_prob": 0.0,
+        "optical_isolator_efficiency": 0.95,
+        "qber_tamper_active": false,
+        "research_mode": true,
+        "use_random_attacks": false,
+        "attack_rate": 0.5,
+        "qber_tamper_amount": 0.0
+      },
+      "llm_calls_per_agent": {
+        "recon": 1,
+        "planning": 1,
+        "execution": 1
+      },
+      "adaptation_history": [
+        {
+          "round": 0,
+          "attack_type": "channel_noise",
+          "qber": 0.1666986677529698,
+          "detected": true,
+          "is_secure": false
+        },
+        {
+          "round": 1,
+          "attack_type": "pns",
+          "qber": 0.12687422503935558,
+          "detected": true,
+          "is_secure": false
+        },
+        {
+          "round": 2,
+          "attack_type": "qber_tamper",
+          "qber": 0.07610086800429465,
+          "detected": false,
+          "is_secure": true
+        }
+      ],
+      "is_adaptive": true,
+      "final_attack_config": {
+        "attack_type": "qber_tamper",
+        "interception_rate": 0.05,
+        "eve_pns_enabled": false,
+        "eve_pns_block_ratio": 0.5,
+        "blinding_attack_active": false,
+        "trojan_horse_prob": 0.0,
+        "qber_tamper_active": true,
+        "qber_tamper_amount": 0.02,
+        "amplitude_damping_gamma": 0.15,
+        "depolarization_prob": 0.0,
+        "detector_efficiency": 0.6594617808532005,
+        "dark_count_rate": 0.0,
+        "channel_loss": 0.3732,
+        "eve_attack_enabled": true
+      },
+      "calibration_state": {
+        "updates": 5,
+        "current_means": {
+          "detector_efficiency_mean": 0.6750944458330825,
+          "channel_loss_mean": 0.4248594959999999,
+          "mean_photon_num_mean": 0.10285165810628392,
+          "distance_km_mean": 2.5643807768205957
+        }
+      }
+    },
+    "timestamp": "2026-08-28T10:00:05.469306+00:00"
+  },
+  {
+    "run_id": "adaptive_intercept__0002",
+    "seed": 42,
+    "scenario_name": "intercept_resend",
+    "attack_type": "intercept_resend",
+    "success": true,
+    "stealth": true,
+    "qber": 0.09927493484456815,
+    "true_qber": 0.09927493484456815,
+    "stolen_key_bits": 0,
+    "key_compromised": false,
+    "detected": false,
+    "sifted_key_length": 1776,
+    "secure_key_length": 8880000,
+    "eve_information": 0.075,
+    "agent_messages": 6,
+    "handoffs_attempted": 5,
+    "handoffs_successful": 5,
+    "llm_calls": 3,
+    "wall_time_sec": 818.4780859947205,
+    "crashed": false,
+    "crash_reason": "",
+    "total_tokens": 23748,
+    "tokens_per_agent": {
+      "recon": 6503,
+      "planning": 9348,
+      "execution": 7897
+    },
+    "extra_params": {
+      "adaptation_depth": 3,
+      "attack_types_tried": [
+        "intercept_resend",
+        "channel_noise"
+      ],
+      "qber_trajectory": [
+        0.12156133390890371,
+        0.14848625530413725,
+        0.09927493484456815
+      ],
+      "detected_trajectory": [
+        true,
+        true,
+        false
+      ],
+      "channel_config": {
+        "raw_key_size": 5000,
+        "num_iterations": 5,
+        "depolarization_prob": 0.0,
+        "sharing_rate": 0.1,
+        "use_amplitude_damping": true,
+        "amplitude_damping_gamma": 0.1669677328804604,
+        "use_phase_damping": false,
+        "phase_damping_lambda": 0.05,
+        "track_state_purities": false,
+        "use_thermal_noise": true,
+        "thermal_ratio": 0.0002397898522574072,
+        "fiber_loss_db_per_km": 0.2,
+        "use_weak_laser": true,
+        "mean_photon_num": 0.13666889431532492,
+        "source_frequency_hz": 1000000.0,
+        "use_channel_attenuation": true,
+        "attenuation_coeff": 1.0,
+        "distance_km": 3.9669088035767324,
+        "detector_efficiency": 0.7190643445762239,
+        "use_dead_time": true,
+        "dead_time_us": 0.01,
+        "interception_rate": 0.25,
+        "eve_attack_enabled": true,
+        "eve_pns_enabled": false,
+        "eve_pns_block_ratio": 0.5,
+        "blinding_attack_active": false,
+        "trojan_horse_prob": 0.0,
+        "optical_isolator_efficiency": 0.95,
+        "qber_tamper_active": false,
+        "research_mode": true,
+        "use_random_attacks": false,
+        "attack_rate": 0.5,
+        "qber_tamper_amount": 0.0
+      },
+      "llm_calls_per_agent": {
+        "recon": 1,
+        "planning": 1,
+        "execution": 1
+      },
+      "adaptation_history": [
+        {
+          "round": 0,
+          "attack_type": "channel_noise",
+          "qber": 0.14848625530413725,
+          "detected": true,
+          "is_secure": false
+        },
+        {
+          "round": 1,
+          "attack_type": "intercept_resend",
+          "qber": 0.09927493484456815,
+          "detected": false,
+          "is_secure": true
+        },
+        {
+          "round": 2,
+          "reason": "eve_success",
+          "qber": 0.09927493484456815
+        }
+      ],
+      "is_adaptive": true,
+      "final_attack_config": {
+        "attack_type": "intercept_resend",
+        "interception_rate": 0.15,
+        "eve_pns_enabled": false,
+        "eve_pns_block_ratio": 0.5,
+        "blinding_attack_active": false,
+        "trojan_horse_prob": 0.0,
+        "qber_tamper_active": false,
+        "qber_tamper_amount": 0.0,
+        "depolarization_prob": 0.0,
+        "amplitude_damping_gamma": 0.1669677328804604,
+        "detector_efficiency": 0.7190643445762239,
+        "dark_count_rate": 0.0,
+        "channel_loss": 0.2712,
+        "eve_attack_enabled": true
+      },
+      "calibration_state": {
+        "updates": 8,
+        "current_means": {
+          "detector_efficiency_mean": 0.7039826693073263,
+          "channel_loss_mean": 0.4184724071279999,
+          "mean_photon_num_mean": 0.10636844619480813,
+          "distance_km_mean": 1.4627182005752437
+        }
+      }
+    },
+    "timestamp": "2026-08-28T10:13:43.948370+00:00"
+  },
+  {
+    "run_id": "adaptive_pns_0000",
+    "seed": 42,
+    "scenario_name": "pns",
+    "attack_type": "pns",
+    "success": true,
+    "stealth": true,
+    "qber": 0.0911964244000918,
+    "true_qber": 0.0911964244000918,
+    "stolen_key_bits": 0,
+    "key_compromised": false,
+    "detected": false,
+    "sifted_key_length": 2498,
+    "secure_key_length": 12490000,
+    "eve_information": 0.06,
+    "agent_messages": 5,
+    "handoffs_attempted": 4,
+    "handoffs_successful": 4,
+    "llm_calls": 3,
+    "wall_time_sec": 511.28271865844727,
+    "crashed": false,
+    "crash_reason": "",
+    "total_tokens": 24822,
+    "tokens_per_agent": {
+      "recon": 7343,
+      "planning": 9453,
+      "execution": 8026
+    },
+    "extra_params": {
+      "adaptation_depth": 2,
+      "attack_types_tried": [
+        "pns",
+        "intercept_resend"
+      ],
+      "qber_trajectory": [
+        0.12434235688655466,
+        0.0911964244000918
+      ],
+      "detected_trajectory": [
+        true,
+        false
+      ],
+      "channel_config": {
+        "raw_key_size": 5000,
+        "num_iterations": 5,
+        "depolarization_prob": 0.0,
+        "sharing_rate": 0.1,
+        "use_amplitude_damping": true,
+        "amplitude_damping_gamma": 0.05867153705374317,
+        "use_phase_damping": false,
+        "phase_damping_lambda": 0.05,
+        "track_state_purities": false,
+        "use_thermal_noise": true,
+        "thermal_ratio": 0.00013279225014068495,
+        "fiber_loss_db_per_km": 0.2,
+        "use_weak_laser": true,
+        "mean_photon_num": 0.1327219552340263,
+        "source_frequency_hz": 1000000.0,
+        "use_channel_attenuation": true,
+        "attenuation_coeff": 1.0,
+        "distance_km": 1.312940467616485,
+        "detector_efficiency": 0.6610180461631644,
+        "use_dead_time": true,
+        "dead_time_us": 0.01,
+        "interception_rate": 0.0,
+        "eve_attack_enabled": true,
+        "eve_pns_enabled": true,
+        "eve_pns_block_ratio": 0.5,
+        "blinding_attack_active": false,
+        "trojan_horse_prob": 0.0,
+        "optical_isolator_efficiency": 0.95,
+        "qber_tamper_active": false,
+        "research_mode": true,
+        "use_random_attacks": false,
+        "attack_rate": 0.5,
+        "qber_tamper_amount": 0.0
+      },
+      "llm_calls_per_agent": {
+        "recon": 1,
+        "planning": 1,
+        "execution": 1
+      },
+      "adaptation_history": [
+        {
+          "round": 0,
+          "attack_type": "intercept_resend",
+          "qber": 0.0911964244000918,
+          "detected": false,
+          "is_secure": true
+        },
+        {
+          "round": 1,
+          "reason": "eve_success",
+          "qber": 0.0911964244000918
+        }
+      ],
+      "is_adaptive": true,
+      "final_attack_config": {
+        "attack_type": "intercept_resend",
+        "interception_rate": 0.12,
+        "eve_pns_enabled": false,
+        "eve_pns_block_ratio": 0.5,
+        "blinding_attack_active": false,
+        "trojan_horse_prob": 0.0,
+        "qber_tamper_active": false,
+        "qber_tamper_amount": 0.0,
+        "depolarization_prob": 0.0,
+        "amplitude_damping_gamma": 0.15,
+        "detector_efficiency": 1.0,
+        "dark_count_rate": 0.0,
+        "channel_loss": 0.416,
+        "eve_attack_enabled": true
+      },
+      "calibration_state": {
+        "updates": 10,
+        "current_means": {
+          "detector_efficiency_mean": 0.7837652976548544,
+          "channel_loss_mean": 0.43737147949271993,
+          "mean_photon_num_mean": 0.10999214923460149,
+          "distance_km_mean": 0.9924494164813312
+        }
+      }
+    },
+    "timestamp": "2026-08-28T10:22:15.232089+00:00"
+  },
+  {
+    "run_id": "adaptive_pns_0001",
+    "seed": 42,
+    "scenario_name": "pns",
+    "attack_type": "pns",
+    "success": true,
+    "stealth": true,
+    "qber": 0.09394660339319238,
+    "true_qber": 0.09394660339319238,
+    "stolen_key_bits": 0,
+    "key_compromised": false,
+    "detected": false,
+    "sifted_key_length": 1798,
+    "secure_key_length": 8990000,
+    "eve_information": 0.125,
+    "agent_messages": 4,
+    "handoffs_attempted": 3,
+    "handoffs_successful": 3,
+    "llm_calls": 3,
+    "wall_time_sec": 281.2798399925232,
+    "crashed": false,
+    "crash_reason": "",
+    "total_tokens": 24391,
+    "tokens_per_agent": {
+      "recon": 7015,
+      "planning": 8942,
+      "execution": 8434
+    },
+    "extra_params": {
+      "adaptation_depth": 1,
+      "attack_types_tried": [
+        "pns"
+      ],
+      "qber_trajectory": [
+        0.09394660339319238
+      ],
+      "detected_trajectory": [
+        false
+      ],
+      "channel_config": {
+        "raw_key_size": 5000,
+        "num_iterations": 5,
+        "depolarization_prob": 0.0,
+        "sharing_rate": 0.1,
+        "use_amplitude_damping": true,
+        "amplitude_damping_gamma": 0.045007413978564004,
+        "use_phase_damping": false,
+        "phase_damping_lambda": 0.05,
+        "track_state_purities": false,
+        "use_thermal_noise": false,
+        "thermal_ratio": 0.0,
+        "fiber_loss_db_per_km": 0.2,
+        "use_weak_laser": true,
+        "mean_photon_num": 0.10535626477253743,
+        "source_frequency_hz": 1000000.0,
+        "use_channel_attenuation": true,
+        "attenuation_coeff": 1.0,
+        "distance_km": 1.0,
+        "detector_efficiency": 0.7745221794775914,
+        "use_dead_time": true,
+        "dead_time_us": 0.01,
+        "interception_rate": 0.0,
+        "eve_attack_enabled": true,
+        "eve_pns_enabled": true,
+        "eve_pns_block_ratio": 0.5,
+        "blinding_attack_active": false,
+        "trojan_horse_prob": 0.0,
+        "optical_isolator_efficiency": 0.95,
+        "qber_tamper_active": false,
+        "research_mode": true,
+        "use_random_attacks": false,
+        "attack_rate": 0.5,
+        "qber_tamper_amount": 0.0
+      },
+      "llm_calls_per_agent": {
+        "recon": 1,
+        "planning": 1,
+        "execution": 1
+      },
+      "adaptation_history": [
+        {
+          "round": 0,
+          "reason": "eve_success",
+          "qber": 0.09394660339319238
+        }
+      ],
+      "is_adaptive": true,
+      "final_attack_config": {
+        "attack_type": "pns",
+        "interception_rate": 0.25,
+        "eve_pns_enabled": true,
+        "eve_pns_block_ratio": 0.75,
+        "blinding_attack_active": false,
+        "trojan_horse_prob": 0.0,
+        "qber_tamper_active": false,
+        "qber_tamper_amount": 0.0,
+        "depolarization_prob": 0.0,
+        "detector_efficiency": 0.7745221794775914,
+        "dark_count_rate": 0.0,
+        "channel_loss": 0.4232,
+        "eve_attack_enabled": true
+      },
+      "calibration_state": {
+        "updates": 11,
+        "current_means": {
+          "detector_efficiency_mean": 0.7809923622016754,
+          "channel_loss_mean": 0.43312003564490387,
+          "mean_photon_num_mean": 0.10860138389598227,
+          "distance_km_mean": 0.9947145915369318
+        }
+      }
+    },
+    "timestamp": "2026-08-28T10:26:56.512928+00:00"
+  },
+  {
+    "run_id": "adaptive_pns_0002",
+    "seed": 42,
+    "scenario_name": "pns",
+    "attack_type": "pns",
+    "success": true,
+    "stealth": true,
+    "qber": 0.06680918595999093,
+    "true_qber": 0.06680918595999093,
+    "stolen_key_bits": 0,
+    "key_compromised": false,
+    "detected": false,
+    "sifted_key_length": 1560,
+    "secure_key_length": 7800000,
+    "eve_information": 0.075,
+    "agent_messages": 4,
+    "handoffs_attempted": 3,
+    "handoffs_successful": 3,
+    "llm_calls": 3,
+    "wall_time_sec": 265.2022695541382,
+    "crashed": false,
+    "crash_reason": "",
+    "total_tokens": 23566,
+    "tokens_per_agent": {
+      "recon": 7541,
+      "planning": 8605,
+      "execution": 7420
+    },
+    "extra_params": {
+      "adaptation_depth": 1,
+      "attack_types_tried": [
+        "pns"
+      ],
+      "qber_trajectory": [
+        0.06680918595999093
+      ],
+      "detected_trajectory": [
+        false
+      ],
+      "channel_config": {
+        "raw_key_size": 5000,
+        "num_iterations": 5,
+        "depolarization_prob": 0.0,
+        "sharing_rate": 0.1,
+        "use_amplitude_damping": true,
+        "amplitude_damping_gamma": 0.09997111430987238,
+        "use_phase_damping": false,
+        "phase_damping_lambda": 0.05,
+        "track_state_purities": false,
+        "use_thermal_noise": true,
+        "thermal_ratio": 0.00012594235256089336,
+        "fiber_loss_db_per_km": 0.2,
+        "use_weak_laser": true,
+        "mean_photon_num": 0.12098336224386193,
+        "source_frequency_hz": 1000000.0,
+        "use_channel_attenuation": true,
+        "attenuation_coeff": 1.0,
+        "distance_km": 2.2871776005605797,
+        "detector_efficiency": 0.763385684677264,
+        "use_dead_time": true,
+        "dead_time_us": 0.01,
+        "interception_rate": 0.0,
+        "eve_attack_enabled": true,
+        "eve_pns_enabled": true,
+        "eve_pns_block_ratio": 0.5,
+        "blinding_attack_active": false,
+        "trojan_horse_prob": 0.0,
+        "optical_isolator_efficiency": 0.95,
+        "qber_tamper_active": false,
+        "research_mode": true,
+        "use_random_attacks": false,
+        "attack_rate": 0.5,
+        "qber_tamper_amount": 0.0
+      },
+      "llm_calls_per_agent": {
+        "recon": 1,
+        "planning": 1,
+        "execution": 1
+      },
+      "adaptation_history": [
+        {
+          "round": 0,
+          "reason": "eve_success",
+          "qber": 0.06680918595999093
+        }
+      ],
+      "is_adaptive": true,
+      "final_attack_config": {
+        "attack_type": "pns",
+        "interception_rate": 0.15,
+        "eve_pns_enabled": true,
+        "eve_pns_block_ratio": 0.5,
+        "blinding_attack_active": false,
+        "trojan_horse_prob": 0.0,
+        "qber_tamper_active": false,
+        "qber_tamper_amount": 0.0,
+        "depolarization_prob": 0.0,
+        "detector_efficiency": 0.763385684677264,
+        "dark_count_rate": 0.00012594235256089336,
+        "channel_loss": 0.5716,
+        "amplitude_damping_gamma": 0.09997111430987238,
+        "eve_attack_enabled": true
+      },
+      "calibration_state": {
+        "updates": 12,
+        "current_means": {
+          "detector_efficiency_mean": 0.7757103589443519,
+          "channel_loss_mean": 0.4746640249514327,
+          "mean_photon_num_mean": 0.11231597740034616,
+          "distance_km_mean": 1.382453494244026
+        }
+      }
+    },
+    "timestamp": "2026-08-28T10:31:21.716199+00:00"
+  },
+  {
+    "run_id": "adaptive_blinding_0000",
+    "seed": 42,
+    "scenario_name": "blinding",
+    "attack_type": "blinding",
+    "success": true,
+    "stealth": true,
+    "qber": 0.04827812061854615,
+    "true_qber": 0.18537656197230662,
+    "stolen_key_bits": 992,
+    "key_compromised": true,
+    "detected": false,
+    "sifted_key_length": 992,
+    "secure_key_length": 4960000,
+    "eve_information": 992.0,
+    "agent_messages": 4,
+    "handoffs_attempted": 3,
+    "handoffs_successful": 3,
+    "llm_calls": 3,
+    "wall_time_sec": 248.84686160087585,
+    "crashed": false,
+    "crash_reason": "",
+    "total_tokens": 22751,
+    "tokens_per_agent": {
+      "recon": 6796,
+      "planning": 7574,
+      "execution": 8381
+    },
+    "extra_params": {
+      "adaptation_depth": 1,
+      "attack_types_tried": [
+        "blinding"
+      ],
+      "qber_trajectory": [
+        0.04827812061854615
+      ],
+      "detected_trajectory": [
+        false
+      ],
+      "channel_config": {
+        "raw_key_size": 5000,
+        "num_iterations": 5,
+        "depolarization_prob": 0.0,
+        "sharing_rate": 0.1,
+        "use_amplitude_damping": true,
+        "amplitude_damping_gamma": 0.13822842558405246,
+        "use_phase_damping": false,
+        "phase_damping_lambda": 0.05,
+        "track_state_purities": false,
+        "use_thermal_noise": true,
+        "thermal_ratio": 9.08763562009941e-06,
+        "fiber_loss_db_per_km": 0.2,
+        "use_weak_laser": true,
+        "mean_photon_num": 0.08790279555290982,
+        "source_frequency_hz": 1000000.0,
+        "use_channel_attenuation": true,
+        "attenuation_coeff": 1.0,
+        "distance_km": 3.230391761970513,
+        "detector_efficiency": 0.882792738987875,
+        "use_dead_time": true,
+        "dead_time_us": 0.01,
+        "interception_rate": 0.3,
+        "eve_attack_enabled": true,
+        "eve_pns_enabled": false,
+        "eve_pns_block_ratio": 0.5,
+        "blinding_attack_active": true,
+        "trojan_horse_prob": 0.0,
+        "optical_isolator_efficiency": 0.95,
+        "qber_tamper_active": true,
+        "research_mode": true,
+        "use_random_attacks": false,
+        "attack_rate": 0.5,
+        "qber_tamper_amount": 0.0
+      },
+      "llm_calls_per_agent": {
+        "recon": 1,
+        "planning": 1,
+        "execution": 1
+      },
+      "adaptation_history": [
+        {
+          "round": 0,
+          "reason": "eve_success",
+          "qber": 0.04827812061854615
+        }
+      ],
+      "is_adaptive": true,
+      "final_attack_config": {
+        "attack_type": "blinding",
+        "interception_rate": 0.3,
+        "eve_pns_enabled": false,
+        "eve_pns_block_ratio": 0.0,
+        "blinding_attack_active": true,
+        "trojan_horse_prob": 0.0,
+        "qber_tamper_active": false,
+        "qber_tamper_amount": 0.0,
+        "depolarization_prob": 0.0,
+        "detector_efficiency": 0.45,
+        "dark_count_rate": 9.08763562009941e-06,
+        "channel_loss": 0.5984,
+        "eve_attack_enabled": true
+      },
+      "calibration_state": {
+        "updates": 13,
+        "current_means": {
+          "detector_efficiency_mean": 0.8078350729574088,
+          "channel_loss_mean": 0.5117848174660029,
+          "mean_photon_num_mean": 0.10499202284611525,
+          "distance_km_mean": 1.9368349745619722
+        }
+      }
+    },
+    "timestamp": "2026-08-28T10:35:30.564052+00:00"
+  },
+  {
+    "run_id": "adaptive_blinding_0001",
+    "seed": 42,
+    "scenario_name": "blinding",
+    "attack_type": "blinding",
+    "success": true,
+    "stealth": true,
+    "qber": 0.04724546160568514,
+    "true_qber": 0.14411437459696494,
+    "stolen_key_bits": 1802,
+    "key_compromised": true,
+    "detected": false,
+    "sifted_key_length": 1802,
+    "secure_key_length": 9010000,
+    "eve_information": 1802.0,
+    "agent_messages": 4,
+    "handoffs_attempted": 3,
+    "handoffs_successful": 3,
+    "llm_calls": 3,
+    "wall_time_sec": 249.23265194892883,
+    "crashed": false,
+    "crash_reason": "",
+    "total_tokens": 22568,
+    "tokens_per_agent": {
+      "recon": 6622,
+      "planning": 8694,
+      "execution": 7252
+    },
+    "extra_params": {
+      "adaptation_depth": 1,
+      "attack_types_tried": [
+        "blinding"
+      ],
+      "qber_trajectory": [
+        0.04724546160568514
+      ],
+      "detected_trajectory": [
+        false
+      ],
+      "channel_config": {
+        "raw_key_size": 5000,
+        "num_iterations": 5,
+        "depolarization_prob": 0.0,
+        "sharing_rate": 0.1,
+        "use_amplitude_damping": true,
+        "amplitude_damping_gamma": 0.16395869739807178,
+        "use_phase_damping": false,
+        "phase_damping_lambda": 0.05,
+        "track_state_purities": false,
+        "use_thermal_noise": true,
+        "thermal_ratio": 3.4669093692252785e-05,
+        "fiber_loss_db_per_km": 0.2,
+        "use_weak_laser": true,
+        "mean_photon_num": 0.08025758637537807,
+        "source_frequency_hz": 1000000.0,
+        "use_channel_attenuation": true,
+        "attenuation_coeff": 1.0,
+        "distance_km": 3.8886133380360755,
+        "detector_efficiency": 0.8642836875934533,
+        "use_dead_time": true,
+        "dead_time_us": 0.01,
+        "interception_rate": 0.3,
+        "eve_attack_enabled": true,
+        "eve_pns_enabled": false,
+        "eve_pns_block_ratio": 0.5,
+        "blinding_attack_active": true,
+        "trojan_horse_prob": 0.0,
+        "optical_isolator_efficiency": 0.95,
+        "qber_tamper_active": true,
+        "research_mode": true,
+        "use_random_attacks": false,
+        "attack_rate": 0.5,
+        "qber_tamper_amount": 0.0
+      },
+      "llm_calls_per_agent": {
+        "recon": 1,
+        "planning": 1,
+        "execution": 1
+      },
+      "adaptation_history": [
+        {
+          "round": 0,
+          "reason": "eve_success",
+          "qber": 0.04724546160568514
+        }
+      ],
+      "is_adaptive": true,
+      "final_attack_config": {
+        "attack_type": "blinding",
+        "interception_rate": 0.35,
+        "eve_pns_enabled": false,
+        "eve_pns_block_ratio": 0.5,
+        "blinding_attack_active": true,
+        "trojan_horse_prob": 0.0,
+        "qber_tamper_active": false,
+        "qber_tamper_amount": 0.0,
+        "amplitude_damping_gamma": 0.16395869739807178,
+        "depolarization_prob": 0.0,
+        "detector_efficiency": 0.8642836875934533,
+        "dark_count_rate": 3.4669093692252785e-05,
+        "channel_loss": 0.6448,
+        "eve_attack_enabled": true
+      },
+      "calibration_state": {
+        "updates": 14,
+        "current_means": {
+          "detector_efficiency_mean": 0.8247696573482222,
+          "channel_loss_mean": 0.551689372226202,
+          "mean_photon_num_mean": 0.09757169190489409,
+          "distance_km_mean": 2.522368483604203
+        }
+      }
+    },
+    "timestamp": "2026-08-28T10:39:39.798704+00:00"
+  },
+  {
+    "run_id": "adaptive_blinding_0002",
+    "seed": 42,
+    "scenario_name": "blinding",
+    "attack_type": "blinding",
+    "success": true,
+    "stealth": true,
+    "qber": 0.004199825984462154,
+    "true_qber": 0.2568656395172416,
+    "stolen_key_bits": 1907,
+    "key_compromised": true,
+    "detected": false,
+    "sifted_key_length": 1907,
+    "secure_key_length": 9535000,
+    "eve_information": 1907.0,
+    "agent_messages": 4,
+    "handoffs_attempted": 3,
+    "handoffs_successful": 3,
+    "llm_calls": 3,
+    "wall_time_sec": 241.90528631210327,
+    "crashed": false,
+    "crash_reason": "",
+    "total_tokens": 22382,
+    "tokens_per_agent": {
+      "recon": 7288,
+      "planning": 7672,
+      "execution": 7422
+    },
+    "extra_params": {
+      "adaptation_depth": 1,
+      "attack_types_tried": [
+        "blinding"
+      ],
+      "qber_trajectory": [
+        0.004199825984462154
+      ],
+      "detected_trajectory": [
+        false
+      ],
+      "channel_config": {
+        "raw_key_size": 5000,
+        "num_iterations": 5,
+        "depolarization_prob": 0.0,
+        "sharing_rate": 0.1,
+        "use_amplitude_damping": true,
+        "amplitude_damping_gamma": 0.1239044351218137,
+        "use_phase_damping": false,
+        "phase_damping_lambda": 0.05,
+        "track_state_purities": false,
+        "use_thermal_noise": true,
+        "thermal_ratio": 0.0001281067169917939,
+        "fiber_loss_db_per_km": 0.2,
+        "use_weak_laser": true,
+        "mean_photon_num": 0.10453653159689569,
+        "source_frequency_hz": 1000000.0,
+        "use_channel_attenuation": true,
+        "attenuation_coeff": 1.0,
+        "distance_km": 2.872425911026388,
+        "detector_efficiency": 0.8619323659083943,
+        "use_dead_time": true,
+        "dead_time_us": 0.01,
+        "interception_rate": 0.3,
+        "eve_attack_enabled": true,
+        "eve_pns_enabled": false,
+        "eve_pns_block_ratio": 0.5,
+        "blinding_attack_active": true,
+        "trojan_horse_prob": 0.0,
+        "optical_isolator_efficiency": 0.95,
+        "qber_tamper_active": true,
+        "research_mode": true,
+        "use_random_attacks": false,
+        "attack_rate": 0.5,
+        "qber_tamper_amount": 0.0
+      },
+      "llm_calls_per_agent": {
+        "recon": 1,
+        "planning": 1,
+        "execution": 1
+      },
+      "adaptation_history": [
+        {
+          "round": 0,
+          "reason": "eve_success",
+          "qber": 0.004199825984462154
+        }
+      ],
+      "is_adaptive": true,
+      "final_attack_config": {
+        "attack_type": "blinding",
+        "interception_rate": 0.92,
+        "eve_pns_enabled": false,
+        "eve_pns_block_ratio": 0.0,
+        "blinding_attack_active": true,
+        "trojan_horse_prob": 0.0,
+        "qber_tamper_active": true,
+        "qber_tamper_amount": 0.03,
+        "amplitude_damping_gamma": 0.1239044351218137,
+        "depolarization_prob": 0.0,
+        "detector_efficiency": 0.8619323659083943,
+        "dark_count_rate": 0.0001281067169917939,
+        "channel_loss": 0.5364,
+        "eve_attack_enabled": true
+      },
+      "calibration_state": {
+        "updates": 15,
+        "current_means": {
+          "detector_efficiency_mean": 0.8359184699162738,
+          "channel_loss_mean": 0.5471025605583413,
+          "mean_photon_num_mean": 0.09966114381249455,
+          "distance_km_mean": 2.6273857118308586
+        }
+      }
+    },
+    "timestamp": "2026-08-28T10:43:41.705911+00:00"
+  },
+  {
+    "run_id": "adaptive_trojan_hor_0000",
+    "seed": 42,
+    "scenario_name": "trojan_horse",
+    "attack_type": "trojan_horse",
+    "success": true,
+    "stealth": true,
+    "qber": 0.0723380622553627,
+    "true_qber": 0.0723380622553627,
+    "stolen_key_bits": 0,
+    "key_compromised": false,
+    "detected": false,
+    "sifted_key_length": 2054,
+    "secure_key_length": 10270000,
+    "eve_information": 0.04,
+    "agent_messages": 6,
+    "handoffs_attempted": 5,
+    "handoffs_successful": 5,
+    "llm_calls": 3,
+    "wall_time_sec": 729.3202385902405,
+    "crashed": false,
+    "crash_reason": "",
+    "total_tokens": 21174,
+    "tokens_per_agent": {
+      "recon": 5863,
+      "planning": 7547,
+      "execution": 7764
+    },
+    "extra_params": {
+      "adaptation_depth": 3,
+      "attack_types_tried": [
+        "trojan_horse",
+        "qber_tamper",
+        "intercept_resend"
+      ],
+      "qber_trajectory": [
+        0.14801974468674067,
+        0.12300401792889377,
+        0.0723380622553627
+      ],
+      "detected_trajectory": [
+        true,
+        true,
+        false
+      ],
+      "channel_config": {
+        "raw_key_size": 5000,
+        "num_iterations": 5,
+        "depolarization_prob": 0.0,
+        "sharing_rate": 0.1,
+        "use_amplitude_damping": true,
+        "amplitude_damping_gamma": 0.12219602814295216,
+        "use_phase_damping": false,
+        "phase_damping_lambda": 0.05,
+        "track_state_purities": false,
+        "use_thermal_noise": true,
+        "thermal_ratio": 0.0002017898355119769,
+        "fiber_loss_db_per_km": 0.2,
+        "use_weak_laser": true,
+        "mean_photon_num": 0.1200285507046514,
+        "source_frequency_hz": 1000000.0,
+        "use_channel_attenuation": true,
+        "attenuation_coeff": 1.0,
+        "distance_km": 2.830122920297533,
+        "detector_efficiency": 0.8468528997527245,
+        "use_dead_time": true,
+        "dead_time_us": 0.01,
+        "interception_rate": 0.2,
+        "eve_attack_enabled": true,
+        "eve_pns_enabled": false,
+        "eve_pns_block_ratio": 0.5,
+        "blinding_attack_active": false,
+        "trojan_horse_prob": 0.3,
+        "optical_isolator_efficiency": 0.95,
+        "qber_tamper_active": false,
+        "research_mode": true,
+        "use_random_attacks": false,
+        "attack_rate": 0.5,
+        "qber_tamper_amount": 0.0
+      },
+      "llm_calls_per_agent": {
+        "recon": 1,
+        "planning": 1,
+        "execution": 1
+      },
+      "adaptation_history": [
+        {
+          "round": 0,
+          "attack_type": "qber_tamper",
+          "qber": 0.12300401792889377,
+          "detected": true,
+          "is_secure": false
+        },
+        {
+          "round": 1,
+          "attack_type": "intercept_resend",
+          "qber": 0.0723380622553627,
+          "detected": false,
+          "is_secure": true
+        },
+        {
+          "round": 2,
+          "reason": "eve_success",
+          "qber": 0.0723380622553627
+        }
+      ],
+      "is_adaptive": true,
+      "final_attack_config": {
+        "attack_type": "intercept_resend",
+        "interception_rate": 0.08,
+        "eve_pns_enabled": false,
+        "eve_pns_block_ratio": 0.5,
+        "blinding_attack_active": false,
+        "trojan_horse_prob": 0.0,
+        "qber_tamper_active": false,
+        "qber_tamper_amount": 0.0,
+        "depolarization_prob": 0.0,
+        "amplitude_damping_gamma": 0.15,
+        "detector_efficiency": 0.8468528997527245,
+        "dark_count_rate": 0.0,
+        "channel_loss": 0.132,
+        "eve_attack_enabled": true
+      },
+      "calibration_state": {
+        "updates": 18,
+        "current_means": {
+          "detector_efficiency_mean": 0.8431023903188217,
+          "channel_loss_mean": 0.36625937827151106,
+          "mean_photon_num_mean": 0.10282796928126937,
+          "distance_km_mean": 1.3172213684417216
+        }
+      }
+    },
+    "timestamp": "2026-08-28T10:55:51.028149+00:00"
+  },
+  {
+    "run_id": "adaptive_trojan_hor_0001",
+    "seed": 42,
+    "scenario_name": "trojan_horse",
+    "attack_type": "trojan_horse",
+    "success": true,
+    "stealth": true,
+    "qber": 0.09452890689125244,
+    "true_qber": 0.09452890689125244,
+    "stolen_key_bits": 0,
+    "key_compromised": false,
+    "detected": false,
+    "sifted_key_length": 2060,
+    "secure_key_length": 10300000,
+    "eve_information": 0.14,
+    "agent_messages": 4,
+    "handoffs_attempted": 3,
+    "handoffs_successful": 3,
+    "llm_calls": 3,
+    "wall_time_sec": 251.9164080619812,
+    "crashed": false,
+    "crash_reason": "",
+    "total_tokens": 22785,
+    "tokens_per_agent": {
+      "recon": 5735,
+      "planning": 8901,
+      "execution": 8149
+    },
+    "extra_params": {
+      "adaptation_depth": 1,
+      "attack_types_tried": [
+        "trojan_horse"
+      ],
+      "qber_trajectory": [
+        0.09452890689125244
+      ],
+      "detected_trajectory": [
+        false
+      ],
+      "channel_config": {
+        "raw_key_size": 5000,
+        "num_iterations": 5,
+        "depolarization_prob": 0.0,
+        "sharing_rate": 0.1,
+        "use_amplitude_damping": true,
+        "amplitude_damping_gamma": 0.045007413978564004,
+        "use_phase_damping": false,
+        "phase_damping_lambda": 0.05,
+        "track_state_purities": false,
+        "use_thermal_noise": true,
+        "thermal_ratio": 0.00014873524265121536,
+        "fiber_loss_db_per_km": 0.2,
+        "use_weak_laser": true,
+        "mean_photon_num": 0.09323783279055034,
+        "source_frequency_hz": 1000000.0,
+        "use_channel_attenuation": true,
+        "attenuation_coeff": 1.0,
+        "distance_km": 1.0,
+        "detector_efficiency": 0.8575583602533209,
+        "use_dead_time": true,
+        "dead_time_us": 0.01,
+        "interception_rate": 0.2,
+        "eve_attack_enabled": true,
+        "eve_pns_enabled": false,
+        "eve_pns_block_ratio": 0.5,
+        "blinding_attack_active": false,
+        "trojan_horse_prob": 0.3,
+        "optical_isolator_efficiency": 0.95,
+        "qber_tamper_active": false,
+        "research_mode": true,
+        "use_random_attacks": false,
+        "attack_rate": 0.5,
+        "qber_tamper_amount": 0.0
+      },
+      "llm_calls_per_agent": {
+        "recon": 1,
+        "planning": 1,
+        "execution": 1
+      },
+      "adaptation_history": [
+        {
+          "round": 0,
+          "reason": "eve_success",
+          "qber": 0.09452890689125244
+        }
+      ],
+      "is_adaptive": true,
+      "final_attack_config": {
+        "attack_type": "trojan_horse",
+        "interception_rate": 0.28,
+        "eve_pns_enabled": false,
+        "eve_pns_block_ratio": 0.5,
+        "blinding_attack_active": false,
+        "trojan_horse_prob": 0.2,
+        "qber_tamper_active": false,
+        "qber_tamper_amount": 0.0,
+        "amplitude_damping_gamma": 0.045007413978564004,
+        "depolarization_prob": 0.0,
+        "detector_efficiency": 0.8575583602533209,
+        "dark_count_rate": 0.00014873524265121536,
+        "channel_loss": 0.3132,
+        "eve_attack_enabled": true
+      },
+      "calibration_state": {
+        "updates": 19,
+        "current_means": {
+          "detector_efficiency_mean": 0.8474391812991715,
+          "channel_loss_mean": 0.35034156479005774,
+          "mean_photon_num_mean": 0.09995092833405367,
+          "distance_km_mean": 1.222054957909205
+        }
+      }
+    },
+    "timestamp": "2026-08-28T11:00:02.946553+00:00"
+  },
+  {
+    "run_id": "adaptive_trojan_hor_0002",
+    "seed": 42,
+    "scenario_name": "trojan_horse",
+    "attack_type": "trojan_horse",
+    "success": true,
+    "stealth": true,
+    "qber": 0.06495231811169115,
+    "true_qber": 0.06495231811169115,
+    "stolen_key_bits": 0,
+    "key_compromised": false,
+    "detected": false,
+    "sifted_key_length": 2013,
+    "secure_key_length": 10065000,
+    "eve_information": 0.025,
+    "agent_messages": 6,
+    "handoffs_attempted": 5,
+    "handoffs_successful": 5,
+    "llm_calls": 3,
+    "wall_time_sec": 789.9085087776184,
+    "crashed": false,
+    "crash_reason": "",
+    "total_tokens": 22490,
+    "tokens_per_agent": {
+      "recon": 6728,
+      "planning": 7808,
+      "execution": 7954
+    },
+    "extra_params": {
+      "adaptation_depth": 3,
+      "attack_types_tried": [
+        "trojan_horse",
+        "intercept_resend"
+      ],
+      "qber_trajectory": [
+        0.05332702181237327,
+        0.11300598410935289,
+        0.06495231811169115
+      ],
+      "detected_trajectory": [
+        false,
+        true,
+        false
+      ],
+      "channel_config": {
+        "raw_key_size": 5000,
+        "num_iterations": 5,
+        "depolarization_prob": 0.0,
+        "sharing_rate": 0.1,
+        "use_amplitude_damping": true,
+        "amplitude_damping_gamma": 0.173082468403845,
+        "use_phase_damping": false,
+        "phase_damping_lambda": 0.05,
+        "track_state_purities": false,
+        "use_thermal_noise": true,
+        "thermal_ratio": 4.1178641254166044e-05,
+        "fiber_loss_db_per_km": 0.2,
+        "use_weak_laser": true,
+        "mean_photon_num": 0.07397599486325637,
+        "source_frequency_hz": 1000000.0,
+        "use_channel_attenuation": true,
+        "attenuation_coeff": 1.0,
+        "distance_km": 4.126890021683647,
+        "detector_efficiency": 0.8154952888870044,
+        "use_dead_time": true,
+        "dead_time_us": 0.01,
+        "interception_rate": 0.2,
+        "eve_attack_enabled": true,
+        "eve_pns_enabled": false,
+        "eve_pns_block_ratio": 0.5,
+        "blinding_attack_active": false,
+        "trojan_horse_prob": 0.3,
+        "optical_isolator_efficiency": 0.95,
+        "qber_tamper_active": false,
+        "research_mode": true,
+        "use_random_attacks": false,
+        "attack_rate": 0.5,
+        "qber_tamper_amount": 0.0
+      },
+      "llm_calls_per_agent": {
+        "recon": 1,
+        "planning": 1,
+        "execution": 1
+      },
+      "adaptation_history": [
+        {
+          "round": 0,
+          "attack_type": "intercept_resend",
+          "qber": 0.11300598410935289,
+          "detected": true,
+          "is_secure": false
+        },
+        {
+          "round": 1,
+          "attack_type": "intercept_resend",
+          "qber": 0.06495231811169115,
+          "detected": false,
+          "is_secure": true
+        },
+        {
+          "round": 2,
+          "reason": "eve_success",
+          "qber": 0.06495231811169115
+        }
+      ],
+      "is_adaptive": true,
+      "final_attack_config": {
+        "attack_type": "intercept_resend",
+        "interception_rate": 0.05,
+        "eve_pns_enabled": false,
+        "eve_pns_block_ratio": 0.5,
+        "blinding_attack_active": false,
+        "trojan_horse_prob": 0.0,
+        "qber_tamper_active": false,
+        "qber_tamper_amount": 0.0,
+        "depolarization_prob": 0.0,
+        "detector_efficiency": 0.8154952888870044,
+        "dark_count_rate": 0.0,
+        "channel_loss": 0.1884,
+        "eve_attack_enabled": true
+      },
+      "calibration_state": {
+        "updates": 22,
+        "current_means": {
+          "detector_efficiency_mean": 0.8264520439843777,
+          "channel_loss_mean": 0.34493915672298975,
+          "mean_photon_num_mean": 0.09615763966347908,
+          "distance_km_mean": 1.0258176837503532
+        }
+      }
+    },
+    "timestamp": "2026-08-28T11:13:12.857062+00:00"
+  },
+  {
+    "run_id": "adaptive_qber_tampe_0000",
+    "seed": 42,
+    "scenario_name": "qber_tamper",
+    "attack_type": "intercept_resend",
+    "success": true,
+    "stealth": true,
+    "qber": 0.06727838737322642,
+    "true_qber": 0.06727838737322642,
+    "stolen_key_bits": 0,
+    "key_compromised": false,
+    "detected": false,
+    "sifted_key_length": 1796,
+    "secure_key_length": 8980000,
+    "eve_information": 0.03,
+    "agent_messages": 6,
+    "handoffs_attempted": 5,
+    "handoffs_successful": 5,
+    "llm_calls": 3,
+    "wall_time_sec": 991.1123960018158,
+    "crashed": false,
+    "crash_reason": "",
+    "total_tokens": 22660,
+    "tokens_per_agent": {
+      "recon": 6309,
+      "planning": 8715,
+      "execution": 7636
+    },
+    "extra_params": {
+      "adaptation_depth": 3,
+      "attack_types_tried": [
+        "intercept_resend",
+        "qber_tamper"
+      ],
+      "qber_trajectory": [
+        0.12585648282229434,
+        0.052022301874419974,
+        0.11822722956786225,
+        0.06727838737322642
+      ],
+      "detected_trajectory": [
+        true,
+        false,
+        true,
+        false
+      ],
+      "channel_config": {
+        "raw_key_size": 5000,
+        "num_iterations": 5,
+        "depolarization_prob": 0.0,
+        "sharing_rate": 0.1,
+        "use_amplitude_damping": true,
+        "amplitude_damping_gamma": 0.13541031168412154,
+        "use_phase_damping": false,
+        "phase_damping_lambda": 0.05,
+        "track_state_purities": false,
+        "use_thermal_noise": false,
+        "thermal_ratio": 0.0,
+        "fiber_loss_db_per_km": 0.2,
+        "use_weak_laser": true,
+        "mean_photon_num": 0.11374430960425742,
+        "source_frequency_hz": 1000000.0,
+        "use_channel_attenuation": true,
+        "attenuation_coeff": 1.0,
+        "distance_km": 3.159497423128918,
+        "detector_efficiency": 0.7423085554035874,
+        "use_dead_time": true,
+        "dead_time_us": 0.01,
+        "interception_rate": 0.15,
+        "eve_attack_enabled": true,
+        "eve_pns_enabled": false,
+        "eve_pns_block_ratio": 0.5,
+        "blinding_attack_active": false,
+        "trojan_horse_prob": 0.0,
+        "optical_isolator_efficiency": 0.95,
+        "qber_tamper_active": true,
+        "research_mode": true,
+        "use_random_attacks": false,
+        "attack_rate": 0.5,
+        "qber_tamper_amount": 0.0
+      },
+      "llm_calls_per_agent": {
+        "recon": 1,
+        "planning": 1,
+        "execution": 1
+      },
+      "adaptation_history": [
+        {
+          "round": 0,
+          "attack_type": "qber_tamper",
+          "qber": 0.052022301874419974,
+          "detected": false,
+          "is_secure": true
+        },
+        {
+          "round": 1,
+          "attack_type": "qber_tamper",
+          "qber": 0.11822722956786225,
+          "detected": true,
+          "is_secure": false
+        },
+        {
+          "round": 2,
+          "attack_type": "intercept_resend",
+          "qber": 0.06727838737322642,
+          "detected": false,
+          "is_secure": true
+        }
+      ],
+      "is_adaptive": true,
+      "final_attack_config": {
+        "attack_type": "intercept_resend",
+        "interception_rate": 0.06,
+        "eve_pns_enabled": false,
+        "eve_pns_block_ratio": 0.5,
+        "blinding_attack_active": false,
+        "trojan_horse_prob": 0.0,
+        "qber_tamper_active": false,
+        "qber_tamper_amount": 0.0,
+        "depolarization_prob": 0.0,
+        "detector_efficiency": 0.7423085554035874,
+        "dark_count_rate": 0.0,
+        "channel_loss": 0.2508,
+        "eve_attack_enabled": true
+      },
+      "calibration_state": {
+        "updates": 26,
+        "current_means": {
+          "detector_efficiency_mean": 0.7625114070118351,
+          "channel_loss_mean": 0.32923509152918984,
+          "mean_photon_num_mean": 0.1004917387414794,
+          "distance_km_mean": 0.5714111107084254
+        }
+      }
+    },
+    "timestamp": "2026-08-28T11:29:43.971457+00:00"
+  }
+]

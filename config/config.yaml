@@ -1,0 +1,35 @@
+# ==========================================================
+# Configurazione del BB84 Recon Framework
+# ==========================================================
+
+llm:
+  provider: "lmstudio"
+  base_url: "http://localhost:1234/v1"   # endpoint locale esposto da LM Studio
+  model_name: "qwen/qwen3.6-35b-a3b"               # sostituisci con il nome esatto mostrato in LM Studio
+  api_key: "lm-studio"                    # LM Studio ignora la key ma alcuni client la richiedono non vuota
+  temperature: 0.2
+  max_tokens: 32678
+  max_reasoning_tokens: 4092
+  request_timeout_seconds: 500
+
+database:
+  provider: "sqlite"
+  path: "data/recon_reports.db"
+
+bb84:
+  # Soglia oltre la quale, per protocollo, la trasmissione va scartata
+  # (valore standard di riferimento in letteratura BB84, adatta al tuo simulatore)
+  qber_abort_threshold: 0.11
+
+agent:
+  name: "recon_agent"
+  max_llm_retries: 2
+
+planning:
+  min_hypotheses: 3
+  max_hypotheses: 8
+  max_llm_retries: 2
+
+execution:
+  max_llm_retries: 2
+  simulation_iterations: 5
