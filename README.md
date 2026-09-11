@@ -1,11 +1,11 @@
-# BB84 Recon Framework
+# MentAT
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![OS](https://img.shields.io/badge/OS-Linux-green)
 ![LLM](https://img.shields.io/badge/AI-LM%20Studio-orange)
 ![DB](https://img.shields.io/badge/DB-SQLite-yellow)
 
-Framework modulare per l'analisi recon del canale BB84 tramite agenti basati su LLM locale (LM Studio). Nel repository sono già implementati gli agenti principali all'interno di `agents/`: `ReconAgent`, `PlanningAgent` e `ExecutionAgent`. Il progetto prende in ingresso i risultati del simulatore (o un dizionario/JSON di parametri osservabili), li invia a un modello linguistico locale per ottenere un'analisi strutturata (report) e salva il risultato in un database SQLite.
+Framework modulare per penetration testing automatizzato del canale BB84 tramite agenti basati su LLM locale (LM Studio o altri). Nel repository sono già implementati gli agenti principali all'interno di `agents/`: `ReconAgent`, `PlanningAgent` e `ExecutionAgent`. Il progetto prende in ingresso i risultati del simulatore (o un dizionario/JSON di parametri osservabili), li dà in pasto al framework e salva il risultato in un database SQLite.
 
 Principali obiettivi:
 - separazione delle responsabilità (channel / prompts / llm / agents / db)
@@ -14,7 +14,7 @@ Principali obiettivi:
 
 ## Caratteristiche
 
-- Analisi locale con LLM via `LM Studio` (no cloud obbligatorio)
+- Analisi locale con LLM via `LM Studio` ()
 - Adapter per sorgenti di dati del canale BB84 (simulatore o file JSON)
 - Prompt template separati in `prompts/`
 - Repository pattern per persistere i `ReconReport` in `data/recon_reports.db`
@@ -27,7 +27,7 @@ Principali obiettivi:
 | Linguaggio | Python 3 |
 | LLM runner | LM Studio (API compatibile OpenAI) |
 | Database | SQLite (file `data/recon_reports.db`) |
-| OS target | Linux / qualsiasi OS con Python |
+| OS target | Qualsiasi OS con Python |
 
 ## Struttura del progetto (sintesi)
 
@@ -109,10 +109,10 @@ L'output è stampato su console e salvato nella tabella `recon_reports` del file
 Questo progetto è inteso per scopi di ricerca ed educazione. Usa sempre strumenti e analisi solo su sistemi di cui possiedi i diritti o per i quali hai autorizzazione scritta. L'autore non è responsabile per uso improprio.
 
 ## Autore
-
+Github: @jacob14047
 Progetto sviluppato come proof-of-concept per analisi recon BB84 usando LLM locali.
 
 ## Licenza
 
-Licenza MIT — vedere il file `LICENSE` se presente.
+Licenza MIT.
 
